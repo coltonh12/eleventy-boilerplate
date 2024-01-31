@@ -2,14 +2,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
-  module.exports = function(eleventyConfig) {
-    module.exports = function(eleventyConfig) {
-      eleventyConfig.addShortcode('authorInfo', function(author) {
-          const currentDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-          return `<p>Written by ${author} on ${currentDate}</p>`;
-      });
-  };
-  
-};
+  module.exports = function(eleventyConfig) {}
+    module.exports = function(eleventyConfig) {}
 
 };
