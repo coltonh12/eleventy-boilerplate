@@ -4,5 +4,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles");
   module.exports = function(eleventyConfig) {}
     module.exports = function(eleventyConfig) {}
-
+    module.exports = function(eleventyConfig) {
+      // Add shortcode for author name
+      eleventyConfig.addShortcode('authorName', function() {
+          return "Colton hyer";
+      });
+  };
+  
 };
