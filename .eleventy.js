@@ -2,4 +2,8 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
+  module.exports = function(eleventyConfig) {
+    eleventyConfig.addShortcode('signature', require('./shortcode.js'));
+};
+
 };
